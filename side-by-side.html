@@ -36,25 +36,25 @@
 
 <!--The video container -->
 
-      <div class="jumbotron">
+      <div class="jumbotron-wider">
     
         <div id="popcorn-container">
 
 <!--The empty DIV is where Popcorn stuff will go -->
 
  
-         <div id="popcorn-area">
-          </div>
-
-          <video id="uas-video" controls style="width:100%;" poster="img/poster.jpg">
+          <video id="uas-video" controls style="min-width:50%; max-width: 100%" poster="img/poster.jpg">
             <source src="video/placeholder.mp4" type="video/mp4"/>
             <source src="video/placeholder.webm" type="video/webm"/>
           </video>
 
-          <h2>Project name (2016)</h2>
-          <p class="lead">Synopsis. <em>Running time.</em></p>
+         <div id="popcorn-sidebox">
+          </div>
 
         </div>
+
+          <h2>Project name (2016)</h2>
+          <p class="lead">Synopsis. <em>Running time.</em></p>
 
       </div>
 
@@ -91,11 +91,27 @@
 document.addEventListener("DOMContentLoaded", function () {
     var pop = Popcorn("#uas-video");
     
+ pop.webpage({
+    id: "webpages-a",
+    start: '.1',
+    end: '3',
+    src: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3078.7386688230326!2d121.52977759420541!3d31.199094475541855!2m3!1f0!2f40.97503941039102!3f0!3m2!1i1024!2i768!4f20!5e1!3m2!1sen!2shk!4v1461424432842",
+    target: "popcorn-sidebox",
+  });
+
+  pop.webpage({
+    id: "webpages-a",
+    start: '3.1',
+    end: '100',
+    src: "https://sketchfab.com/models/e88205007aa34ad588fd721d5176d0a3/embed",
+    target: "popcorn-sidebox",
+  });
+
   pop.image({
-    start:'1', // Our start time in seconds
-    end:'4', // Our end time in seconds
+    start:'100', // Our start time in seconds
+    end:'400', // Our end time in seconds
     src: "img/poster.jpg",
-    target: "popcorn-area",
+    target: "popcorn-sidebox",
     effect: "flip", // Apply a CSS class to the target container
     /* applyclass: "flip, black, move_down", // Specify which CSS class */
   });
