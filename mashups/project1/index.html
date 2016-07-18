@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Display Webcam Stream</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script type="text/javascript" src="canvas-to-blob.js"></script>
+<script type="text/javascript" src="wow.js"></script>
+</head>
+<body>
+  <h1>Before Posting...</h1>
+  <video id="video" width="400" height="300" autoplay></video>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/2000px-Arrow_east.svg.png" alt="arrow" id="arrow" width="150px" display="inline"/>
+  <canvas id="canvas" width="400" height="300"></canvas>
+  <div id='info' class = 'info'></div>
+  <button id="snap">Snap Photo</button>
+  <button type="button" name="button" id="flickr"><img src="http://www.modot.org/flickr/images/flickr-logo.jpg" alt="flickr" width="200px"/></button>
+  <i></i>
+</body>
+</html>
