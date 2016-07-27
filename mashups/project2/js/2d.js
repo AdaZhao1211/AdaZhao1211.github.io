@@ -108,15 +108,34 @@ function drawmap(countires){
     map: 'world_mill_en_byName',
     series: {
         regions: [{
-          scale: ['#86a4d8'],
+          scale: ['#ff80aa'],
           attribute: 'fill',
           values: vv,
         }]
     },
     onRegionClick: function(e, code){
-      thecountry = code;
-      popdata(thecountry);
+      var d = false;
+      for (var i = 0; i < countries.length; i++){
+        if(countries[i] == code){
+          d = true;
+          break;
+        }
+      }
+      if(d){
+        thecountry = code;
+        popdata(thecountry);
+      }else{
+        alert('No Available Data for ' + code +'\nPlease Click on Red Area')
+      }
+
+
+
+
+
     },
+    /*
+    hover(e, el, code)
+    */
   });
 }
 
