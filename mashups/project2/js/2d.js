@@ -56,15 +56,32 @@ function draw(){
     balls.bounce(balls);
     for(var i = 0; i < more; i++){
       var obj = balls[i]
-      if(obj.position.x < 0 || obj.position.x > width){
+      if(obj.position.x < 0){
         var direction = atan2(obj.velocity.y, -obj.velocity.x);
         direction = degrees(direction);
         obj.setSpeed(random(1, 5), direction)
+        obj.position.x = 1;
       }
-      if(obj.position.y < 0 || obj.position.y > height){
-        var direction = atan2(-obj.velocity.y, obj.velocity.x);
+      if(obj.position.x > width){
+        var direction = atan2(obj.velocity.y, -obj.velocity.x);
         direction = degrees(direction);
         obj.setSpeed(random(1, 5), direction)
+        obj.position.x = width-1;
+
+      }
+      if(obj.position.y < 0){
+        var direction = atan2(-obj.velocity.y, obj.velocity.x);
+        direction = degrees(direction);
+        obj.setSpeed(random(1, 5), direction);
+        obj.position.y = 1;
+
+      }
+      if(obj.position.y > height){
+        var direction = atan2(-obj.velocity.y, obj.velocity.x);
+        direction = degrees(direction);
+        obj.setSpeed(random(1, 5), direction);
+        obj.position.y = height -1;
+
       }
     }
     drawSprites();
@@ -108,7 +125,7 @@ function drawmap(countires){
     map: 'world_mill_en_byName',
     series: {
         regions: [{
-          scale: ['#ff80aa'],
+          scale: ['#99ccff'],
           attribute: 'fill',
           values: vv,
         }]
