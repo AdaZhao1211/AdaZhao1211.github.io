@@ -6,3 +6,7 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+$(document).ready(function(){
+  var b = $("#test");
+  b.append($(window).width());
+})
