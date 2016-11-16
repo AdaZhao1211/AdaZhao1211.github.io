@@ -13,19 +13,28 @@
   </head>
   <body>
     <div class="container">
+<!-- top bar -->
       <img src="" alt="" />
       <ul class="topnav" id="myTopnav">
-        <li><a href="#">A</a></li>
-        <li><a href="#">d</a></li>
-        <li><a href="#">a</a></li>
+        <li><a href="#" id = "collection">A</a></li>
+        <li><a href="docindex.html" id="doc">d</a></li>
+        <li><a href="aboutindex.html" id="about">a</a></li>
         <li class="icon">
           <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
         </li>
       </ul>
-      <div class="box">
+<!-- home images -->
+      <div class="box" id = "homeImage">
         <div class="imageOuter">
           <img class="modalimg" id="disney" src="work/uas/title.jpg" border="0">
         </div>
+        <div class="imageOuter">
+          <a href="https://www.youtube.com/watch?v=sdUjqxWytv0&feature=youtu.be">
+            <img src="work/airhockey.png" border="0">
+          </a>
+        </div>
+      </div>
+<!-- modals -->
         <div class="modal" id="disneymodal">
           <div class="modalBox">
             <div class="modal-content">
@@ -47,6 +56,7 @@
               <img src="work/uas/f2.JPG" alt="footage2" style="width: 100%"/>
               <img src="work/uas/f3.JPG" alt="footage3" style="width: 100%"/>
               <div class="videoBox">
+                <iframe src="https://www.youtube.com/embed/0bir52yTKTw" frameborder="0" allowfullscreen></iframe>
               </div>
               <p>
                 Since the village will be relocated in the future, a 3D model of the whole village was made using photogrammetry to remember the existence of Zhou Jia Cun.
@@ -54,23 +64,13 @@
               <p style="font-size: 5px">
                 in collaboration with Prudence Yao and Harry Li.
               </p>
+              <span class="close">×</span>
             </div>
           </div>
         </div>
-        <div class="imageOuter">
-          <a href="https://www.youtube.com/watch?v=sdUjqxWytv0&feature=youtu.be">
-            <img src="work/airhockey.png" border="0">
-          </a>
-        </div>
 
-      </div>
-
-      <div class="box">
-        <div id="test">
-
-        </div>
-      </div>
-      <div class="box">
+<!-- footer -->
+    <div class="box">
       <footer class="footer">
         <p>
           <a href="https://github.com/AdaZhao1211"><span class="socicon-github"></span></a> &nbsp;

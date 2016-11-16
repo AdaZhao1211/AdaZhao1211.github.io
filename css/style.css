@@ -87,14 +87,14 @@ border-radius: 8px;
     background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
 }
 .modalBox{
-  padding: 20px;
+  padding: 40px;
 }
 /* Modal Content */
 .modal-content {
     background-color: rgba(255, 255, 255, 0.9);
     margin: auto;
     padding: 20px;
-    width: 80%;
+    width: 70%;
 }
 .modal p{
   font-size: 12px;
@@ -120,7 +120,7 @@ border-radius: 8px;
 .close {
     color: #646464;
     float: right;
-    font-size: 28px;
+    font-size: 60px;
     font-weight: bold;
 }
 
