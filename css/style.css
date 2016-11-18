@@ -120,7 +120,7 @@ border-radius: 8px;
 .close {
     color: #646464;
     float: right;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -146,4 +146,17 @@ border-radius: 8px;
 }
 .footer a{
   text-decoration: none;
+}
+
+/* aboutpage */
+p a{
+  text-decoration: none;
+}
+
+.container1{
+  width: 80%;;
+  margin: auto;
+}
+.container1 p{
+  font-size: 15px;
 }
