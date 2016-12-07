@@ -58,6 +58,7 @@ ul.topnav li.icon {display: none;}
 /* portfolio images*/
 .box{
   clear: both;
+  text-align: center;
 }
 .imageOuter {
 	width:226px;
@@ -97,7 +98,10 @@ border-radius: 8px;
     width: 70%;
 }
 .modal p{
-  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  line-height: 1.8em;
+  font-size: 15px;
 }
 .modal iframe{
   padding: auto;
@@ -152,11 +156,25 @@ border-radius: 8px;
 p a{
   text-decoration: none;
 }
-
 .container1{
   width: 80%;;
   margin: auto;
 }
-.container1 p{
+
+.aboutbox ul{
+  list-style: none;
+}
+.aboutbox1{
+  width: 90%;
+  margin: auto;
   font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* doc index*/
+.banner{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  border-radius: 15px;
 }
