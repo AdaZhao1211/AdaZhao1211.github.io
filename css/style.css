@@ -1,7 +1,7 @@
 /* ppp0 */
 body {
   margin:0;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: "Raleway", sans-serif;
 }
 .container{
   width: 80%;;
@@ -14,7 +14,6 @@ ul.topnav {
   margin: 10px;
   padding: 0;
   overflow: hidden;
-  /*float: right;*/
 }
 
 ul.topnav li {float: left;}
@@ -60,15 +59,22 @@ ul.topnav li.icon {display: none;}
   clear: both;
   text-align: center;
 }
+.box a p{
+  text-decoration: none;
+}
 .imageOuter {
 	width:226px;
-	height:226px;
+	height:300px;
 	float:left;
 	margin:0 34px 14px 0;
 	padding:0;
 }
 .imageOuter:hover{
   opacity: 0.7;
+}
+.imageOuter p{
+  text-align: left;
+  font-size: 12px;
 }
 .imageOuter img {
 -moz-border-radius: 8px;
@@ -98,7 +104,6 @@ border-radius: 8px;
     width: 70%;
 }
 .modal p{
-  font-family: "Raleway", sans-serif;
   font-weight: 300;
   line-height: 1.8em;
   font-size: 15px;
@@ -137,6 +142,7 @@ border-radius: 8px;
 
 /* footer */
 .footer{
+  clear: both;
   padding: 15px;
   color: #777;
   border-top: 1px solid #e5e5e5;
@@ -144,12 +150,17 @@ border-radius: 8px;
 }
 .footer p{
   font-size: 10px;
+  margin: 5px;
 }
 .footer span{
   color: #646464;
 }
 .footer a{
   text-decoration: none;
+}
+.footer .icons{
+  width: 20px;
+  height: auto;
 }
 
 /* aboutpage */
@@ -161,6 +172,13 @@ p a{
   margin: auto;
 }
 
+.container1 .modalBox img{
+  width: 45%;
+  height: auto;
+  display: inline;
+  margin: 10px;
+}
+
 .aboutbox ul{
   list-style: none;
 }
@@ -168,7 +186,6 @@ p a{
   width: 90%;
   margin: auto;
   font-size: 15px;
-  font-family: "Raleway", sans-serif;
 }
 
 /* doc index*/
