@@ -65,12 +65,13 @@ ul.topnav li.icon {display: none;}
 #homeImage{
   width: 90%;
   margin: auto;
+  text-align: center;
 }
 .imageOuter {
 	width:226px;
 	height:300px;
-	float:left;
-	margin:0 34px 14px 0;
+  display: inline-block;
+  margin: 7px;
 	padding:0;
 }
 .imageOuter:hover{
@@ -81,8 +82,8 @@ ul.topnav li.icon {display: none;}
   font-size: 12px;
 }
 .imageOuter img {
--moz-border-radius: 8px;
-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
 }
 
 /* modal */

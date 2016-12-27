@@ -9,7 +9,7 @@ function myFunction() {
 
 $(document).ready(function(){
   $("#collection").hover(function(){
-    $(this).html("A collection");
+    $(this).html("A portfolio");
   },function(){
     $(this).html("A");
   });
