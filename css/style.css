@@ -238,7 +238,20 @@ p a{
   .imageOuter p{
     font-size: 25px;
   }
+  h2{
+    font-size: 50px;
+  }
   h4{
-    font-size: 40px;
+    font-size: 30px;
+  }
+  .aboutbox1{
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+  .aboutboximg{
+    clear: both;
+    float: none;
+    width: 100%;
   }
 }
