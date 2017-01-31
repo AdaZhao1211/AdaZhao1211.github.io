@@ -49,6 +49,7 @@ ul.topnav li.icon {display: none;}
   width: 90%;
   margin: auto;
   text-align: center;
+  padding: 30px;
 }
 .imageOuter {
 	width:226px;
@@ -253,5 +254,15 @@ p a{
     clear: both;
     float: none;
     width: 100%;
+  }
+  .footer .icons{
+    width: 40px;
+    height: auto;
+  }
+  .footer p{
+    font-size: 20px;
+  }
+  .foo link{
+    color:
   }
 }
