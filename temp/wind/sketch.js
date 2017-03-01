@@ -41,7 +41,6 @@ function setup(){
   thisInput.position(660, 580);
   thisInput.changed(newText);
   ball = new Bob(30, 200, 200);
-  image(pin, 630, 570, 20, 20);
 }
 function draw(){
   if(start){
@@ -49,6 +48,7 @@ function draw(){
     ball.addGravity();
     ball.applyForce(createVector(windSpeed/10000, 0));
     ball.display();
+    image(pin, 630, 570, 20, 20);
   }
 
 }
