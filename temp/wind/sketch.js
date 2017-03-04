@@ -3,17 +3,23 @@ var thisInput;
 var windSpeed;
 var windDegree;
 var city;
-var num = 3;
-var Bobs = new Array(num);
-var Springs= new Array(num-1);
+//flag variables
+var row = 4;
+var col = 3;
+var Bobs = new Array();
+//var Springs= new Array(num-1);
+var flagx = 450;
+var flagy = 200;
 var ball;
-var g = 0.01;
+var g = 0.5;
 var start = false;
 var pin;
+var ballimg;
 function preload(){
   city = "New York";
   //pin???
-  pin = loadImage("pin.svg");
+  pin = loadImage("data/pin.png");
+  ballimg = loadImage("data/ball.png");
   thisInput = createInput();
 
   thisInput.value("New York");
@@ -23,9 +29,8 @@ function preload(){
     type: 'GET',
     dataType: 'json',
     success: function(result){
-      temp = result.wind;
-      windSpeed = temp.speed;
-      windDegree = temp.deg;
+      windSpeed = result.wind.speed/1000;
+      windDegree = result.wind.deg;
       console.log(windSpeed);
       console.log(windDegree);
       start = true;
@@ -40,17 +45,56 @@ function setup(){
   background(210);
   thisInput.position(660, 580);
   thisInput.changed(newText);
-  ball = new Bob(30, 200, 200);
+  ball = new Ball(50, 200, 450);
+  //construct flag bobs matrix
+  for(var temprow = 0; temprow < row; temprow++){
+    if(temprow == 0){
+      for(var tempcol = 0; tempcol < col; tempcol++){
+        if(tempcol == 0){
+          Bobs.push(new Array());
+        }
+        Bobs[temprow].push(new Bob(10, flagx+30*tempcol, flagy+30*temprow, 1));
+      }
+    }else{
+      for(var tempcol = 0; tempcol < col; tempcol++){
+        if(tempcol == 0){
+          Bobs.push(new Array());
+        }
+        Bobs[temprow].push(new Bob(10, flagx+30*tempcol, flagy+30*temprow, 0));
+      }
+    }
+  }
+  //construct Springs
+  for(var temprow = 0; temprow < row; temprow++){
+    for(var tempcol = 0; tempcol < col; tempcol++){
+      var bob = Bobs[temprow][tempcol];
+      if(temprow != row-1){
+        var bob1 = Bobs[temprow + 1][tempcol];
+
+      }
+      if(tempcol != col-1){
+        var bob2 = Bobs[temprow][tempcol + 1];
+      }
+    }
+  }
 }
 function draw(){
+  for(var _row = 0; _row < row; _row++){
+    for(var _col=0; _col<col; _col++){
+      var b = Bobs[_row][_col];
+      b.update();
+      b.display();
+    }
+  }
+  /*ball part done
   if(start){
     background(210);
-    ball.addGravity();
-    ball.applyForce(createVector(windSpeed/10000, 0));
-    ball.display();
+    ball.update();
+    //ball.rotate();
+    //ball.display();
     image(pin, 630, 570, 20, 20);
   }
-
+  */
 }
 
 function newText(){
@@ -61,51 +105,14 @@ function newText(){
     dataType: 'json',
     success: function(result){
       temp = result.wind;
-      windSpeed = temp.speed;
-      windDegree = temp.deg;
-      thisInput.value("");
+      windSpeed = result.wind.speed/1000;
+      windDegree = result.wind.deg;
       console.log(windSpeed);
       console.log(windDegree);
+      setup();
     },
     error: function (err) {
       console.log(err);
     }
   });
-}
-
-function Bob(m, x, y){
-  this.m = m;
-  this.pos = createVector(x, y);
-  this.vel = createVector(0, 0);
-  this.acc = createVector(0, 0);
-  this.display = function(){
-    this.vel.add(this.acc);
-    this.pos.add(this.vel);
-    ellipse(this.pos.x, this.pos.y, this.m, this.m);
-  }
-  this.applyForce = function(force){
-    this.acc.add(force);
-  }
-  this.addGravity = function(){
-    if(this.pos.y < 580){
-      this.acc.add(createVector(0, g));
-    }else{
-      this.vel.y = 0;
-      //?
-      this.pos.y = 580;
-    }
-  }
-}
-
-function Spring(b1, b2, k, l){
-  this.b1 = b1;
-  this.b2 = b2;
-  this.k = k;
-  this.l = l;
-  this.display = function(){
-    line(this.b1.pos.x, this.b1.pos.y, this.b2.pos.x, this.b2.pos.y);
-  }
-  this.connect = function(){
-
-  }
 }
