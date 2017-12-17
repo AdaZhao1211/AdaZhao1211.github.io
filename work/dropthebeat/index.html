@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href = "../../css/style.css" rel = "stylesheet">
+    <link rel="icon" type="image/png" href="../../image/test.png">
+    <title>Ada Zhao</title>
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="container1">
+<!-- top bar -->
+      <img src="" alt="" />
+      <ul class="topnav" id="myTopnav">
+        <li><a href="http://www.adazhao.com"><img class='logo' src="../../image/test.png" alt="test" /></a></li>
+        <li><a class="text"href="../../index.html" id = "collection">A</a></li>
+        <li><a class="text"href="../../docindex.html" id="doc">d</a></li>
+        <li><a class="text"href="../../aboutindex.html" id="about">a</a></li>
+        <li class="icon">
+          <a class="text" href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+      </ul>
+      <div class="modalBox">
+            <h2>Drop the Beat</h2>
+            <h4>Motion Controlled Generative Music</h4>
+            <div class="details">
+              <p>IMA, Shanghai</p>
+              <p>Dec 14th, 2017</p>
+
+            </div>
+            <p>
+              Are you ready? Let's drop the beat!
+            </p>
+            <p><b>Drop the Beat</b> acts as an early-stage exploration and experiment for my Interactive Media Arts Capstone that will be completed in next May.</p>
+            <div class="videoBox">
+              <iframe src="https://player.vimeo.com/video/196812434" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <p><a href="https://vimeo.com/196812434">The Backside of Shanghai Disney</a> from <a href="https://vimeo.com/user60466133">Ada Zhao</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            </div>
+            <p>
+              Think about some live performances that you have been to, especially those includes dancing, what is the relationship between background music and the performance. As I have observed, it is always the case that those two parts are separated in some way. There is almost no communication between the performer and the background music. The dancer, as the key of the performance even need to adjust himself to improvise with the sound. However, the point of a live performance is the word ‘live’. During each performance, the dancer may have different emotion that may want to adjust his movements accordingly. If we can give more control to dancer and make the music go along with the movement, the dancer can pause at some movements, go back to a certain movement, jump over a paragraph etc. I believe this would help dancers better express themselves.
+            </p>
+            <div class="box">
+              <img src="frames1444.png" alt="output"/>
+            </div>
+            <p>Drop the beat, as the first try on this idea, allows users to make beat, keep them in a looper and change background music. Kinect catches the movement in Processing. Then, Processing gives a mirrored visual and a control panel. Every time the user triggers something, Processing sends a message through open sound control. Max MSP receives the message through UDP, put the beat into a matrix and loop through it.</p>
+            <p>Instructions on how to use it</p>
+            <p>1. Open up Max patcher and check the makenote node <br>
+               2. If not, open the makenote Help patch and copy the node, re-link it<br>
+               3. In the makenote Help patch, go to 'more' tab and turn on the toggle and then turn off(this somehow triggers the MIDI channel so we can use different instruments)<br>
+               4. Open Processing sketch and hit play</p>
+            <p>Future Movements</p>
+            <li>Need to unify the audio metronome in Max with the video framerate in Processing so that Processing sketch can give visual feedback of sound to the user</li>
+            <li>Kinect can't stick to one person</li>
+            <li>Need to move on to a fancier visual rendering platform</li>
+            <li>May use the raw SDK</li>
+            <li>Figure out why the makenote node in Max breaks every time I reopen it</li>
+            <li>Figure out how to trigger MIDI channel</li>
+            <div class="box">
+              <img src="output.jpg" alt="output"/>
+            </div>
+            <a href="../VLP/index.html"><p class="prev"> < prev </p></a>
+            <a href="../../index.html"><p class="home">Home</p></a>
+            <a href="../VLP/index.html"><p class="next"> next > </p></a>
+      </div>
+
+
+
+      <div class="box">
+        <footer class="footer">
+          <p>
+            <a href="https://www.instagram.com/aaadazhao/?hl=en"><img src="../../icons/ins.svg" alt="instagram" class = "icons"></a>
+            <a href="https://github.com/AdaZhao1211"><img src="../../icons/github.svg" alt="github" class = "icons"></a>
+            <a href="https://cn.linkedin.com/in/ada-zhao-7626b4a4"><img src="../../icons/linkedin.svg" alt="linkedin" class = "icons"></a>
+            <a href="https://vimeo.com/user60466133"><img src="../../icons/vimeo.svg" alt="vimeo" class = "icons"></a>
+            <a href="mailto:adazhao1211@gmail.com"><img src="../../icons/mail.svg" alt="mail" class = "icons"></a>
+          </p>
+          <p>© Ada Zhao 2017.</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
