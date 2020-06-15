@@ -10,10 +10,7 @@ body {
 }
 
 /* ppp1 */
-.logo{
-  width: 30px;
-  padding: 10px;
-}
+
 ul.topnav {
   list-style-type: none;
   margin: 0px,10px, 0px, 10px;
@@ -170,6 +167,14 @@ p a{
   margin: 10px;
 }
 
+.container1 .modalBox .eightImg{
+  width: 80%
+}
+
+.logo{
+  width: 30px;
+  padding: 10px;
+}
 .aboutbox ul{
   list-style: none;
 }
