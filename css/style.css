@@ -16,21 +16,27 @@ ul.topnav {
   margin: 0px,10px, 0px, 10px;
   padding: 0;
   overflow: hidden;
-  vertical-align: bottom;
+  display:table-row;
+
 }
 
-ul.topnav li {float: left;}
-
-ul.topnav li .text{
-  display: inline-block;
-  color: #646464;
-  text-align: center;
+ul.topnav li {
   padding: 30px 10px 0px 10px;
+  display: table-cell;
+}
+
+.logo{
+  width: 80px;
+  vertical-align: text-bottom;
+}
+ul.topnav li .text{
+  color: #646464;
   text-decoration: none;
   transition: 0.3s;
   font-size: 17px;
 }
-ul.topnav li a:hover {color: #646464;}
+
+
 ul.topnav li.icon {display: none;}
 
 /* portfolio images*/
@@ -40,6 +46,10 @@ ul.topnav li.icon {display: none;}
 }
 .box a p{
   text-decoration: none;
+}
+
+p{
+  color: #646464;
 }
 #homeImage{
   width: 90%;
@@ -171,10 +181,7 @@ p a{
   width: 80%
 }
 
-.logo{
-  width: 30px;
-  padding: 10px;
-}
+
 .aboutbox ul{
   list-style: none;
 }
