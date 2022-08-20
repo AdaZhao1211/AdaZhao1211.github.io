@@ -3,6 +3,7 @@ body {
   margin:0;
   font-family: "Raleway", sans-serif;
 }
+
 .container{
   width: 80%;;
   margin: auto;
@@ -14,25 +15,31 @@ body {
 ul.topnav {
   margin: 0px,10px, 0px, 10px;
   overflow: hidden;
-  display:table-row;
-
+  display:inline-block;
 }
 
 ul.topnav li {
+  display:inline-block;
   padding: 30px 10px 30px 10px;
-  display: table-cell;
 }
 
 .logo{
   width: 80px;
   vertical-align: text-bottom;
 }
+
 ul.topnav li .text{
-  color: #646464;
   text-decoration: none;
-  transition: 0.3s;
   font-size: 17px;
+  color: #646464;
+  transition: 0.3s;
+  position: relative;
+  vertical-align: bottom;
 }
+ul.topnav li .text :hover{
+  font-weight: 900;
+}
+
 
 
 ul.topnav li.icon {display: none;}
