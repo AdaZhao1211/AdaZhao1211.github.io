@@ -14,6 +14,10 @@ $(document).ready(function(){
     $(this).html("A");
   });
 
+
+  $("#myTopnav").load("../../header.html");
+  // $("#footer").load("footer.html");
+
   $("#doc").hover(function(){
     $(this).html("documentation");
   },function(){
