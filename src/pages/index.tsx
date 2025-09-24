@@ -13,7 +13,7 @@ export default function Home() {
       <SelfIntro
         bio={
           <div className="space-y-4">
-            <p className="text-gray-700 leading-relaxed text-xl md:text-xl font-semibold">Hello, I'm Ada Zhao 赵艺</p>
+            <p className="text-gray-700 leading-relaxed text-xl md:text-xl font-semibold">Hello, I&apos;m Ada Zhao 赵艺</p>
 
             <p className="text-gray-700 leading-relaxed">
               I am a first-year PhD student in Computer Science at the University of Colorado Boulder, advised by Prof. Ellen Yi-Luen Do and Prof. Ryo Suzuki

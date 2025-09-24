@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
+    "preview": "npx serve out -l 3000",
     "build:static": "npm run build && npm run export"
   },
   "dependencies": {

@@ -148,7 +148,7 @@ export default function PaperPage({ paper }: Props) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = (papers as any[])
+  const paths = (papers as Paper[])
     .filter((p) => p.label)
     .map((p) => ({ params: { label: p.label } }));
   return { paths, fallback: false };
@@ -156,6 +156,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const label = ctx.params?.label as string | undefined;
-  const paper = (papers as any[]).find((p) => p.label === label) || null;
+  const paper = (papers as Paper[]).find((p) => p.label === label) || undefined;
   return { props: { paper } };
 };

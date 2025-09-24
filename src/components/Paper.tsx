@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 type PaperProps = {
   title: string;
-  date?: string;       // e.g., "2025-05-12"
   authors?: string[];
   venue?: string;
   abstract?: string;
@@ -16,7 +15,6 @@ type PaperProps = {
 
 export default function Paper({
   title,
-  date,
   authors = [],
   venue,
   abstract,
