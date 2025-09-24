@@ -1,6 +1,9 @@
 node_modules/
 .next/
+.turbo/
 out/
 dist/
+coverage/
+.eslintcache
 .env
 .DS_Store
