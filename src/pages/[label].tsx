@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import papers from "@/data/papers.json";
 
 type Paper = {
@@ -74,7 +75,7 @@ export default function PaperPage({ paper }: Props) {
             {/* Teaser figure */}
             {paper.teaser && (
               <div className="w-full rounded-lg overflow-hidden bg-gray-100">
-                <img src={paper.teaser} alt={paper.imageAlt || paper.title} className="w-full object-cover" />
+                <Image src={paper.teaser} alt={paper.imageAlt || paper.title} className="w-full h-auto" width={1024} height={600} sizes="(max-width: 1024px) 100vw, 1024px" />
               </div>
             )}
 

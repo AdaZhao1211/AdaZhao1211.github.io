@@ -1,4 +1,5 @@
 // src/components/Paper.tsx
+import Image from "next/image";
 import Link from "next/link";
 type PaperProps = {
   title: string;
@@ -43,13 +44,6 @@ export default function Paper({
   const safeHref = normalizeHref(href);
   // link to a root-level paper page using the paper label, e.g. /GuidedReality
   const internalHref = label ? `/${encodeURIComponent(label)}` : undefined;
-  const formattedDate =
-    date && !isNaN(Date.parse(date))
-      ? new Date(date).toLocaleDateString(undefined, {
-          year: "numeric",
-          month: "short",
-        })
-      : date;
 
   return (
     <article
@@ -59,17 +53,17 @@ export default function Paper({
     >
       {/* LEFT: media */}
       {internalHref ? (
-        <Link href={internalHref} className={`block w-full overflow-hidden rounded-xl bg-gray-100 ${aspect}`} aria-label={title}>
-          <img src={imageSrc} alt={imageAlt || title} className="h-full w-full object-cover" />
+        <Link href={internalHref} className={`block w-full overflow-hidden rounded-xl bg-gray-100 ${aspect} relative`} aria-label={title}>
+          <Image src={imageSrc} alt={imageAlt || title} className="object-cover" fill sizes="320px" />
         </Link>
       ) : (
         <a
           href={safeHref}
-          className={`block w-full overflow-hidden rounded-xl bg-gray-100 ${aspect}`}
+          className={`block w-full overflow-hidden rounded-xl bg-gray-100 ${aspect} relative`}
           aria-label={title}
           {...(safeHref ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         >
-          <img src={imageSrc} alt={imageAlt || title} className="h-full w-full object-cover" />
+          <Image src={imageSrc} alt={imageAlt || title} className="object-cover" fill sizes="320px" />
         </a>
       )}
 
