@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Guided Reality: Generating Visually-Enriched AR Physical Task Guidance with LLMs and Vision Models",
+    "label": "GuidedReality",
+    "authors": ["Ada Yi Zhao", "Aditya Gunturu", "Ellen Yi-Luen Do", "Ryo Suzuki"],
+    "venue": "38th Annual ACM Symposium on User Interface Software and Technology (UIST ’25)",
+    "abstract": "In this paper, we present Guided Reality, a fully automated AR system that generates embedded and dynamic visual guidance based on step-by-step instructions.",
+    "imageSrc": "/gif/GuidedReality.gif",
+    "imageAlt": "Demo of the interface",
+    "href": "https://arxiv.org/abs/2508.03547",
+    "teaser": "/teaser/GuidedReality.PNG",
+    "video": "https://youtu.be/M73fUhMDadk",
+    "long_abstract": "Large language models (LLMs) have enabled the automatic generation of step-by-step augmented reality (AR) instructions for a wide range of physical tasks. However, existing LLM-based AR guidance often lacks rich visual augmentations to effectively embed instructions into spatial context for a better user understanding. We present Guided Reality, a fully automated AR system that generates embedded and dynamic visual guidance based on step-by-step instructions. Our system integrates LLMs and vision models to: 1) generate multi-step instructions from user queries, 2) identify appropriate types of visual guidance, 3) extract spatial information about key interaction points in the real world, and 4) embed visual guidance in physical space to support task execution. Drawing from a corpus of user manuals, we define five categories of visual guidance and propose an identification strategy based on the current step. We evaluate the system through a user study (N=16), completing real-world tasks and exploring the system in the wild. Additionally, four instructors shared insights on how Guided Reality could be integrated into their training workflows."
+  },
+  {
+    "title": "The WizARd and Apprentice: An Augmented Reality Expert Capture System",
+    "label": "Wizard",
+    "authors": ["Ada Yi Zhao", "Suibi Che-Chuan Weng", "Ella Grace Finstuen", "Haifeng Chen", "Lu-An Tang", "Kai Ishikawa", "Ellen Yi-Luen Do"],
+    "venue": "23rd IEEE International Symposium on Mixed and Augmented Reality (ISMAR '24 Adjunct)",
+    "abstract": "WizARd and Apprentice tracks and records expert demonstrations and moving objects, leveraging the natural synchronization of speech and action to identify key steps and automatically create spatial markers.",
+    "imageSrc": "/gif/wizard.gif",
+    "imageAlt": "Demo of the interface",
+    "href": "10.1109/ISMAR-Adjunct64951.2024.00113",
+    "teaser": "/teaser/Wizard.png",
+    "video": "https://youtu.be/opodp-YwPrU",
+    "long_abstract":"Learning to perform physical tasks is ubiquitous yet challenging without expert guidance. While Augmented Reality (AR) has been adopted to overlay instructions directly onto the physical context, the natural authoring of such content remains unexplored. To address this, we developed WizARd and Apprentice, an AR expert capture system for training novices using an AR headset. WizARd and Apprentice tracks and records expert demonstrations and moving objects, leveraging the natural synchronization of speech and action to identify key steps and automatically create spatial markers."
+  }
+]
