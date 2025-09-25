@@ -127,13 +127,13 @@ export default function SelfIntro({
       </div>
 
       {/* Right: profile photo */}
-      <div className="relative w-full overflow-hidden rounded-full aspect-square bg-gray-100 md:order-2">
+      <div className="relative mx-auto w-40 h-40 overflow-hidden rounded-full bg-gray-100 md:w-full md:aspect-square md:h-auto md:order-2">
         <Image
           src={imageSrc}
           alt={imageAlt || "profile photo"}
           fill
           className="object-cover"
-          sizes="(max-width: 768px) 100vw, 200px"
+          sizes="(max-width: 768px) 160px, 200px"
           priority
         />
       </div>
