@@ -28,8 +28,7 @@
 }
 
 body {
-  background: #ffffff; /* was var(--background) */
-  color: #171717;      /* dark text for readability */
-  font-family: Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  color: #171717;
+  font-family: var(--font-roboto), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
-

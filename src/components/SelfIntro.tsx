@@ -72,22 +72,10 @@ export default function SelfIntro({
   };
   return (
     <section
-      className="mx-auto max-w-4xl grid grid-cols-1 md:[grid-template-columns:200px_1fr] gap-6 items-center px-4 py-10"
+      className="mx-auto max-w-4xl grid grid-cols-1 md:[grid-template-columns:1fr_200px] gap-6 items-center px-4 py-10"
     >
-      {/* Left: profile photo */}
-      <div className="relative w-full overflow-hidden rounded-full aspect-square bg-gray-100">
-        <Image
-          src={imageSrc}
-          alt={imageAlt || "profile photo"}
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 200px"
-          priority
-        />
-      </div>
-
-      {/* Right: text */}
-      <div className="space-y-3">
+      {/* Left: text */}
+      <div className="space-y-3 md:order-1">
         {typeof bio === "string" ? (
           bio.split("\n").map((line, idx) => (
             <p key={idx} className="text-gray-700 leading-relaxed">
@@ -125,6 +113,18 @@ export default function SelfIntro({
             </a>
           )}
         </div>
+      </div>
+
+      {/* Right: profile photo */}
+      <div className="relative w-full overflow-hidden rounded-full aspect-square bg-gray-100 md:order-2">
+        <Image
+          src={imageSrc}
+          alt={imageAlt || "profile photo"}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 200px"
+          priority
+        />
       </div>
     </section>
   );

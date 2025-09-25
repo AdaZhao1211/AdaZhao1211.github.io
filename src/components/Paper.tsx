@@ -70,14 +70,14 @@ export default function Paper({
         {/* title */}
         <h3 className="text-lg font-semibold leading-snug" itemProp="name">
           {internalHref ? (
-            <Link href={internalHref} className="transition-colors duration-50 hover:text-blue-800 hover:no-underline" itemProp="url">
+            <Link href={internalHref} className="transition-colors duration-50 hover:text-blue-600 hover:no-underline" itemProp="url">
               {title}
             </Link>
           ) : safeHref ? (
             <a
               href={safeHref}
               itemProp="url"
-              className="transition-colors duration-50 hover:text-blue-800 hover:no-underline"
+              className="transition-colors duration-50 hover:text-blue-600 hover:no-underline"
               target="_blank"
               rel="noopener noreferrer"
             >
