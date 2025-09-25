@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
+import ExternalLink from "@/components/ExternalLink";
+import Footer from "@/components/Footer";
 import { GetStaticProps } from "next";
 import fs from "fs";
 import path from "path";
@@ -20,48 +22,59 @@ export default function About({ galleryImages }: AboutProps) {
       <main className="mx-auto max-w-4xl px-4 py-10">
         <article className="space-y-8">
           {/* Page Title */}
-          <header>
+          {/* <header>
             <h1 className="text-3xl font-bold text-gray-900">About Me</h1>
-          </header>
+          </header> */}
 
           {/* About Text Block */}
           <section className="space-y-6">
             
             <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
-                I'm Ada Zhao, a passionate researcher and PhD student at the University of Colorado Boulder, 
-                where I'm exploring the fascinating intersection of Human-Computer Interaction, Augmented Reality, and Generative AI.
+                I am a Ph.D. student in Computer Science at the University of Colorado Boulder, advised by Professor Ellen Yi-Luen Do and Professor Ryo Suzuki.
+                My research interests include Human-Computer Interaction (HCI), Augmented Reality, and Generative AI.
+                In particular, I am passionate about designing and studying interactive systems that bring learning into the physical world, enabling people to explore, experiment, and create through embodied, hands-on experiences.
               </p>
-              
               <p>
-                My journey in computer science began with a curiosity about how technology can enhance human experiences and learning. 
-                Under the guidance of Prof. Ellen Yi-Luen Do and Prof. Ryo Suzuki, I'm working to bridge the gap between digital 
-                innovation and physical learning environments.
+                Prior to this, I worked as a Senior Product Manager at{" "}
+                <ExternalLink href="https://www.tencent.com/en-us/">
+                  Tencent
+                </ExternalLink>
+                , focusing on video content creation tools.
+                I hold a Master's degree in Creative Technology and Design from the{" "}
+                <ExternalLink href="https://www.colorado.edu/atlas/">
+                  ATLAS Institute
+                </ExternalLink>
+                {" "}at the University of Colorado Boulder, as well as a Bachelor's degree in{" "}
+                <ExternalLink href="https://shanghai.nyu.edu/content/interactive-media-arts">
+                  Interactive Media Arts
+                </ExternalLink>
+                {" "}and Computer Science from{" "}
+                <ExternalLink href="https://shanghai.nyu.edu/">
+                  NYU Shanghai
+                </ExternalLink>.
               </p>
-              
               <p>
-                What drives me most is the potential to transform how we learn and interact with information in our physical spaces. 
-                I believe that the future of education and human-computer interaction lies in seamlessly integrating digital experiences 
-                with our tangible world, making learning more intuitive, engaging, and accessible.
+                In my free time, I enjoy staying active in the outdoors, especially through climbing🧗, snowboarding🏂 and surfing🏄.
               </p>
-              
               <p>
-                When I'm not immersed in research, you can find me exploring new technologies, collaborating with fellow researchers, 
-                and always looking for ways to make technology more human-centered. I'm excited to share my work and connect with 
-                others who share similar passions for innovation and learning.
+                Feel free to reach out at {" "}
+                <ExternalLink
+                  href="mailto:ada.zhao@colorado.edu"
+                >
+                  ada.zhao@colorado.edu
+                </ExternalLink>{" "}
+                — I’d love to connect and chat about ideas, projects, or just say hi!
               </p>
 
-              <p>
-                Prior to this, I worked as a Senior Product Manager at Tencent. I graduated with a Bachelor degree with double major in Interactive Media Arts and Computer Science at New York University Shanghai.
-              </p>
             </div>
           </section>
 
 
           {/* Photo Gallery */}
-          <section className="space-y-4">            
+          <section className="space-y-4 max-w-2xl mx-auto">            
             {galleryImages.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {galleryImages.map((image, index) => (
                   <div key={image} className="relative aspect-[3/4] overflow-hidden rounded-lg bg-gray-100">
                     <Image 
@@ -84,6 +97,8 @@ export default function About({ galleryImages }: AboutProps) {
           
         </article>
       </main>
+
+      <Footer />
     </>
   );
 }

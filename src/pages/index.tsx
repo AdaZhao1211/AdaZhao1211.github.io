@@ -2,6 +2,7 @@ import Head from "next/head";
 import SelfIntro from "@/components/SelfIntro";
 import Paper from "@/components/Paper";
 import News from "@/components/News";
+import Footer from "@/components/Footer";
 import papers from "@/data/papers.json"; // direct JSON import
 import news from "@/data/news.json";
 
@@ -36,12 +37,13 @@ export default function Home() {
               >
                 Ryo Suzuki
               </a>
+              .
             </p>
 
             <p className="text-gray-700 leading-relaxed">
               My research interests include Human-Computer Interaction (HCI), Augmented Reality,
-              and Generative AI. I am passionate about bringing the learning experience into our
-              physical space.
+              and Generative AI.
+              In particular, I am passionate about designing and studying interactive systems that bring learning into the physical world, enabling people to explore, experiment, and create through embodied, hands-on experiences.
             </p>
           </div>
         }
@@ -50,12 +52,13 @@ export default function Home() {
           { href: "https://www.linkedin.com/in/ada-yi-zhao", label: "LinkedIn", icon: "linkedin" },
           { href: "https://www.instagram.com/aaadazhao/", label: "Instagram", icon: "instagram" },
           { href: "https://x.com/ada_yi_zhao", label: "X", icon: "x" },
+          { href: "mailto:ada.zhao@colorado.edu", label: "email", icon: "email" },
         ]}
         cvHref="/assets/Ada_Zhao_CV.pdf"
       />
 
       {/* News Section */}
-      <section className="mx-auto max-w-4xl px-4 py-10 space-y-8 bg-white">
+      <section className="mx-auto max-w-4xl px-4 py-4 space-y-2 bg-white">
         <h2 className="text-lg font-bold">News</h2>
         
         <div className="space-y-0">
@@ -66,8 +69,8 @@ export default function Home() {
       </section>
 
       {/* Recent Papers Section */}
-      <main className="mx-auto max-w-4xl px-4 py-10 space-y-8 bg-white">
-        <h1 className="text-lg font-bold">Recent Papers</h1>
+      <main className="mx-auto max-w-4xl px-4 py-4 space-y-2 bg-white">
+        <h1 className="text-lg font-bold">Publications</h1>
 
         <div className="space-y-6">
           {papers.map((paper, idx) => (
@@ -75,6 +78,8 @@ export default function Home() {
           ))}
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }

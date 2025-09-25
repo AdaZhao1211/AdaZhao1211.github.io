@@ -35,7 +35,7 @@ export default function SelfIntro({
         // prefer PNG from public/icons for X/twitter if available
         return (
           <Image
-            src="/icons/X.png"
+            src="/icons/x.svg"
             alt="X"
             width={20}
             height={20}
@@ -45,7 +45,7 @@ export default function SelfIntro({
       case "instagram":
         return (
           <Image
-            src="/icons/ins.png"
+            src="/icons/ins.svg"
             alt="Instagram"
             width={20}
             height={20}
@@ -55,8 +55,19 @@ export default function SelfIntro({
       case "linkedin":
         return (
           <Image
-            src="/icons/linkedin.png"
+            src="/icons/linkedin.svg"
             alt="linkedin"
+            width={20}
+            height={20}
+            className="inline-block filter grayscale brightness-90 transition duration-200 group-hover:grayscale-0 group-hover:brightness-110"
+          />
+        );
+      case "email":
+        // prefer PNG from public/icons for X/twitter if available
+        return (
+          <Image
+            src="/icons/emailfull.svg"
+            alt="X"
             width={20}
             height={20}
             className="inline-block filter grayscale brightness-90 transition duration-200 group-hover:grayscale-0 group-hover:brightness-110"
@@ -105,7 +116,7 @@ export default function SelfIntro({
           {cvHref && (
             <a
               href={cvHref}
-              download
+              
               className="ml-2 inline-flex items-center gap-2 px-3 py-1.5 border border-gray-200 rounded-md text-sm bg-white hover:bg-gray-50"
             >
               

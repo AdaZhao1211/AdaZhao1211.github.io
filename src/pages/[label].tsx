@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 import papers from "@/data/papers.json";
 
 type Paper = {
@@ -143,6 +144,8 @@ export default function PaperPage({ paper }: Props) {
           </p>
         </article>
       </main>
+
+      <Footer />
     </>
   );
 }
