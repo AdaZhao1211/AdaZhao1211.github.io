@@ -41,11 +41,11 @@ export default function About({ galleryImages }: AboutProps) {
                   Tencent
                 </ExternalLink>
                 , focusing on video content creation tools.
-                I hold a Master's degree in Creative Technology and Design from the{" "}
+                I hold a Master&apos;s degree in Creative Technology and Design from the{" "}
                 <ExternalLink href="https://www.colorado.edu/atlas/">
                   ATLAS Institute
                 </ExternalLink>
-                {" "}at the University of Colorado Boulder, as well as a Bachelor's degree in{" "}
+                {" "}at the University of Colorado Boulder, as well as a Bachelor&apos;s degree in{" "}
                 <ExternalLink href="https://shanghai.nyu.edu/content/interactive-media-arts">
                   Interactive Media Arts
                 </ExternalLink>
