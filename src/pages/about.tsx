@@ -31,7 +31,15 @@ export default function About({ galleryImages }: AboutProps) {
             
             <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
-                I am a Ph.D. student in Computer Science at the University of Colorado Boulder, advised by Professor Ellen Yi-Luen Do and Professor Ryo Suzuki.
+                I am a Ph.D. student in Computer Science at the University of Colorado Boulder, advised by Professor{" "}
+                <ExternalLink href="https://www.colorado.edu/atlas/ellen-yi-luen-do">
+                  Ellen Yi-Luen Do
+                </ExternalLink>
+                {" "}and Professor{" "}
+                <ExternalLink href= "https://ryosuzuki.org">
+                  Ryo Suzuki
+                </ExternalLink>
+                .
                 My research interests include Human-Computer Interaction (HCI), Augmented Reality, and Generative AI.
                 In particular, I am passionate about designing and studying interactive systems that bring learning into the physical world, enabling people to explore, experiment, and create through embodied, hands-on experiences.
               </p>
