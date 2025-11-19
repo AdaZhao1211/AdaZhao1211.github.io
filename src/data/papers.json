@@ -19,10 +19,10 @@
     "_comments": ["Rishi Vanukuru", "Krithik Ranjan", "Ada Yi Zhao", "David Lindero", "Gunilla H Berndtsson", "Gregoire Phillips", "Amy Banić", "Mark D Gross", "Ellen Yi-Luen Do"],
     "venue": "(Under Review, CSCW)",
     "abstract": "A comparative structured observation study to analyze how people's perception of space, and interaction with remote collaborators changes across mobile video calls and AR-based calls",
-    "imageSrc": "/gif/SpatialCollaboration.PNG",
+    "imageSrc": "/gif/SpatialCollaboration.png",
     "imageAlt": "Demo of the interface",
     "href": "",
-    "teaser": "/teaser/SpatialCollaboration.PNG",
+    "teaser": "/teaser/SpatialCollaboration.png",
     "video": "https://youtu.be/rgCz4yNIGVQ",
     "long_abstract": "Mobile video calls are widely used to share information about real-world objects and environments with remote collaborators. While these calls provide valuable visual context in real time, the experience of moving around a space and interacting with people is significantly reduced compared to being in the same location. Recent work has demonstrated the potential of Mobile Augmented Reality applications to enable more spatial forms of collaboration across distance. To better understand the dynamics of mobile AR collaboration and how this medium compares against the status quo, we conducted a comparative structured observation study to analyze how people’s perception of space, and interaction with remote collaborators changes across mobile video calls and AR-based calls. Fourteen pairs of participants completed a spatial collaboration task using each medium. Through a mixed-methods analysis of session videos, transcripts, motion logs, post-task exercises, and interviews, we highlight how the choice of medium influences the roles and responsibilities that collaborators take on and the construction of a shared language for coordination. We discuss the importance of spatial reasoning with one’s body, how video calls help participants “be on the same page” more directly, and how AR calls enable both onsite and remote collaborators to engage with the space and each other in ways that resemble in-person interaction. Our study offers a nuanced view of the benefits and limitations across both mediums, and we conclude with a discussion of design implications for future systems that integrate mobile video and AR to better support spatial collaboration in its many forms."
   },
