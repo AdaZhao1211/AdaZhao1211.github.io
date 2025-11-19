@@ -93,7 +93,8 @@ export default function Paper({
           <div className="text-sm text-gray-600">
             <span itemProp="author">
               {authors.map((author, idx) => {
-                const isMe = author.toLowerCase().includes("ada yi zhao");
+                const norm = author.toLowerCase();
+                const isMe = norm.includes("ada yi zhao") || norm.includes("ada zhao");
                 const nameEl = isMe ? (
                   <strong key={idx} className="font-bold">
                     {author}

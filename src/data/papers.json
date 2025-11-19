@@ -3,20 +3,34 @@
     "title": "Guided Reality: Generating Visually-Enriched AR Physical Task Guidance with LLMs and Vision Models",
     "label": "GuidedReality",
     "authors": ["Ada Yi Zhao", "Aditya Gunturu", "Ellen Yi-Luen Do", "Ryo Suzuki"],
-    "venue": "38th Annual ACM Symposium on User Interface Software and Technology (UIST ’25)",
+    "venue": "UIST 2025",
     "abstract": "In this paper, we present Guided Reality, a fully automated AR system that generates embedded and dynamic visual guidance based on step-by-step instructions.",
     "imageSrc": "/gif/GuidedReality.gif",
     "imageAlt": "Demo of the interface",
-    "href": "https://arxiv.org/abs/2508.03547",
+    "href": "https://doi.org/10.1145/3746059.3747784",
     "teaser": "/teaser/GuidedReality.PNG",
     "video": "https://youtu.be/M73fUhMDadk",
     "long_abstract": "Large language models (LLMs) have enabled the automatic generation of step-by-step augmented reality (AR) instructions for a wide range of physical tasks. However, existing LLM-based AR guidance often lacks rich visual augmentations to effectively embed instructions into spatial context for a better user understanding. We present Guided Reality, a fully automated AR system that generates embedded and dynamic visual guidance based on step-by-step instructions. Our system integrates LLMs and vision models to: 1) generate multi-step instructions from user queries, 2) identify appropriate types of visual guidance, 3) extract spatial information about key interaction points in the real world, and 4) embed visual guidance in physical space to support task execution. Drawing from a corpus of user manuals, we define five categories of visual guidance and propose an identification strategy based on the current step. We evaluate the system through a user study (N=16), completing real-world tasks and exploring the system in the wild. Additionally, four instructors shared insights on how Guided Reality could be integrated into their training workflows."
   },
   {
+    "title": "Studying Mobile Spatial Collaboration across Video Calls and Augmented Reality",
+    "label": "SpatialCollaboration",
+    "authors": ["Anonymous authors"],
+    "_comments": ["Rishi Vanukuru", "Krithik Ranjan", "Ada Yi Zhao", "David Lindero", "Gunilla H Berndtsson", "Gregoire Phillips", "Amy Banić", "Mark D Gross", "Ellen Yi-Luen Do"],
+    "venue": "(Under Review, CSCW)",
+    "abstract": "A comparative structured observation study to analyze how people's perception of space, and interaction with remote collaborators changes across mobile video calls and AR-based calls",
+    "imageSrc": "/gif/SpatialCollaboration.PNG",
+    "imageAlt": "Demo of the interface",
+    "href": "",
+    "teaser": "/teaser/SpatialCollaboration.PNG",
+    "video": "https://youtu.be/rgCz4yNIGVQ",
+    "long_abstract": "Mobile video calls are widely used to share information about real-world objects and environments with remote collaborators. While these calls provide valuable visual context in real time, the experience of moving around a space and interacting with people is significantly reduced compared to being in the same location. Recent work has demonstrated the potential of Mobile Augmented Reality applications to enable more spatial forms of collaboration across distance. To better understand the dynamics of mobile AR collaboration and how this medium compares against the status quo, we conducted a comparative structured observation study to analyze how people’s perception of space, and interaction with remote collaborators changes across mobile video calls and AR-based calls. Fourteen pairs of participants completed a spatial collaboration task using each medium. Through a mixed-methods analysis of session videos, transcripts, motion logs, post-task exercises, and interviews, we highlight how the choice of medium influences the roles and responsibilities that collaborators take on and the construction of a shared language for coordination. We discuss the importance of spatial reasoning with one’s body, how video calls help participants “be on the same page” more directly, and how AR calls enable both onsite and remote collaborators to engage with the space and each other in ways that resemble in-person interaction. Our study offers a nuanced view of the benefits and limitations across both mediums, and we conclude with a discussion of design implications for future systems that integrate mobile video and AR to better support spatial collaboration in its many forms."
+  },
+  {
     "title": "The WizARd and Apprentice: An Augmented Reality Expert Capture System",
     "label": "Wizard",
     "authors": ["Ada Yi Zhao", "Suibi Che-Chuan Weng", "Ella Grace Finstuen", "Haifeng Chen", "Lu-An Tang", "Kai Ishikawa", "Ellen Yi-Luen Do"],
-    "venue": "23rd IEEE International Symposium on Mixed and Augmented Reality (ISMAR '24 Adjunct)",
+    "venue": "ISMAR 2024 Adjunct",
     "abstract": "WizARd and Apprentice tracks and records expert demonstrations and moving objects, leveraging the natural synchronization of speech and action to identify key steps and automatically create spatial markers.",
     "imageSrc": "/gif/wizard.gif",
     "imageAlt": "Demo of the interface",
@@ -24,5 +38,18 @@
     "teaser": "/teaser/Wizard.png",
     "video": "https://youtu.be/opodp-YwPrU",
     "long_abstract":"Learning to perform physical tasks is ubiquitous yet challenging without expert guidance. While Augmented Reality (AR) has been adopted to overlay instructions directly onto the physical context, the natural authoring of such content remains unexplored. To address this, we developed WizARd and Apprentice, an AR expert capture system for training novices using an AR headset. WizARd and Apprentice tracks and records expert demonstrations and moving objects, leveraging the natural synchronization of speech and action to identify key steps and automatically create spatial markers."
+  },
+  {
+    "title": "Systems and methods for interpolative three-dimensional imaging within the viewing zone of a display",
+    "label": "Telewindow",
+    "authors": ["Michael Naimark", "Cameron Ballard", "David Santiano", "Grace Huang", "Mateo Juvera Molina", "Ada Zhao"],
+    "venue": "US Patent",
+    "abstract": "We present TeleWindow: a frame with mountable volumetriccameras that attaches to a display for immersive 3D video confer-encing.",
+    "imageSrc": "/gif/tele.gif",
+    "imageAlt": "Demo of the interface",
+    "href": "https://patents.google.com/patent/US12069408B2/en",
+    "teaser": "",
+    "video": "https://youtu.be/cna0FDTvcXs?si=0DR3jEXt0_V1Ikcd",
+    "long_abstract": "Video conferencing has become an essential part of everyday lifefor many people. However, traditional 2D video calls leave muchto be desired. Eye-contact, multiple viewpoints, and 3D spatialawareness all make video conferencing much more immersive.We present TeleWindow: a frame with mountable volumetriccameras that attaches to a display for immersive 3D video conferencing. The full system consists of a 3D display and a frame withup to four volumetric cameras. Our system was flexible conceptually as well as physically. We intended our research to be “unfettered” rather than focus and directed, e.g., for anything directlyentrepreneurial and commercial: “art as unsupervised research”. In contrast to similar work, our focus was on making an accessible system for exploring immersive teleconferencing so costof materials and required technical knowledge is kept to a minimum. We present a technical baseline for immersive, easily replicable 3D teleconferencing."
   }
 ]
