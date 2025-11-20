@@ -8,7 +8,7 @@
     "imageSrc": "/gif/GuidedReality.gif",
     "imageAlt": "Demo of the interface",
     "href": "https://doi.org/10.1145/3746059.3747784",
-    "teaser": "/teaser/GuidedReality.PNG",
+    "teaser": "/teaser/GuidedReality.png",
     "video": "https://youtu.be/M73fUhMDadk",
     "long_abstract": "Large language models (LLMs) have enabled the automatic generation of step-by-step augmented reality (AR) instructions for a wide range of physical tasks. However, existing LLM-based AR guidance often lacks rich visual augmentations to effectively embed instructions into spatial context for a better user understanding. We present Guided Reality, a fully automated AR system that generates embedded and dynamic visual guidance based on step-by-step instructions. Our system integrates LLMs and vision models to: 1) generate multi-step instructions from user queries, 2) identify appropriate types of visual guidance, 3) extract spatial information about key interaction points in the real world, and 4) embed visual guidance in physical space to support task execution. Drawing from a corpus of user manuals, we define five categories of visual guidance and propose an identification strategy based on the current step. We evaluate the system through a user study (N=16), completing real-world tasks and exploring the system in the wild. Additionally, four instructors shared insights on how Guided Reality could be integrated into their training workflows."
   },
@@ -17,7 +17,7 @@
     "label": "SpatialCollaboration",
     "authors": ["Anonymous authors"],
     "_comments": ["Rishi Vanukuru", "Krithik Ranjan", "Ada Yi Zhao", "David Lindero", "Gunilla H Berndtsson", "Gregoire Phillips", "Amy Banić", "Mark D Gross", "Ellen Yi-Luen Do"],
-    "venue": "(Under Review, CSCW)",
+    "venue": "(CSCW, Under Review)",
     "abstract": "A comparative structured observation study to analyze how people's perception of space, and interaction with remote collaborators changes across mobile video calls and AR-based calls",
     "imageSrc": "/gif/SpatialCollaboration.png",
     "imageAlt": "Demo of the interface",
