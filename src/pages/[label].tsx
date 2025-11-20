@@ -139,9 +139,6 @@ export default function PaperPage({ paper }: Props) {
 
           </div>
 
-          <p>
-            <Link href="/">← Back home</Link>
-          </p>
         </article>
       </main>
 
