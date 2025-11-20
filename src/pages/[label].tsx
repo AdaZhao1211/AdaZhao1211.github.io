@@ -56,7 +56,7 @@ export default function PaperPage({ paper }: Props) {
       <main className="mx-auto max-w-4xl px-4 py-10">
         <article>
           <div className="space-y-2">
-            <h1 className="text-2xl font-bold">{paper.title}</h1>
+            <h1 className="text-lg font-semibold">{paper.title}</h1>
             {paper.authors && (
               <div className="text-sm text-gray-800">{paper.authors.join(", ")}</div>
             )}
@@ -82,9 +82,9 @@ export default function PaperPage({ paper }: Props) {
 
             {/* Introduction: use long_abstract if present */}
             {paper.long_abstract && (
-              <div className="prose max-w-none text-gray-900">
+              <div className="max-w-none text-gray-900">
                 <h2 className="text-lg font-semibold">Abstract</h2>
-                <p>{paper.long_abstract}</p>
+                <p className="text-sm">{paper.long_abstract}</p>
               </div>
             )}
 
