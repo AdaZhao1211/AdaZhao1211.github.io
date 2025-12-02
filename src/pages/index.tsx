@@ -54,7 +54,7 @@ export default function Home() {
           { href: "https://x.com/ada_yi_zhao", label: "X", icon: "x" },
           { href: "mailto:ada.zhao@colorado.edu", label: "email", icon: "email" },
         ]}
-        cvHref="/assets/Ada_Zhao_CV_12/2025.pdf"
+        cvHref="/assets/Ada_Zhao_CV_122025.pdf"
       />
 
       {/* News Section */}
