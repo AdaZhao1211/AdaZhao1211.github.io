@@ -41,9 +41,9 @@ export default function Home() {
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              My research interests include Human-Computer Interaction (HCI), Augmented Reality,
-              and Generative AI.
-              In particular, I am passionate about designing and studying interactive systems that bring learning into the physical world, enabling people to explore, experiment, and create through embodied, hands-on experiences.
+              I am an HCI researcher working to reimagine computing as a collaborator in physical life.
+              My work explores embedded assistance, an approach that integrates intelligent feedback directly into the spaces and tools where action happens by using computer vision, large language models, and augmented reality.
+              I aim to help people learn, move, and engage more joyfully with the physical world.
             </p>
           </div>
         }
