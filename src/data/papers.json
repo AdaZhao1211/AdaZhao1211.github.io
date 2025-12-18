@@ -15,9 +15,8 @@
   {
     "title": "Studying Mobile Spatial Collaboration across Video Calls and Augmented Reality",
     "label": "SpatialCollaboration",
-    "authors": ["Anonymous authors"],
-    "_comments": ["Rishi Vanukuru", "Krithik Ranjan", "Ada Yi Zhao", "David Lindero", "Gunilla H Berndtsson", "Gregoire Phillips", "Amy Banić", "Mark D Gross", "Ellen Yi-Luen Do"],
-    "venue": "(CSCW, Under Review)",
+    "authors": ["Rishi Vanukuru", "Krithik Ranjan", "Ada Yi Zhao", "David Lindero", "Gunilla H Berndtsson", "Gregoire Phillips", "Amy Banić", "Mark D Gross", "Ellen Yi-Luen Do"],
+    "venue": "CSCW 2026",
     "abstract": "A comparative structured observation study to analyze how people's perception of space, and interaction with remote collaborators changes across mobile video calls and AR-based calls",
     "imageSrc": "/gif/SpatialCollaboration.png",
     "imageAlt": "Demo of the interface",
