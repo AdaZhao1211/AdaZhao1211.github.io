@@ -62,7 +62,7 @@ export default function Home() {
         <h2 className="text-lg font-bold">News</h2>
         
         <div className="space-y-0">
-          {news.map((item, idx) => (
+          {news.slice(0, 3).map((item, idx) => (
             <News key={idx} {...item} />
           ))}
         </div>
